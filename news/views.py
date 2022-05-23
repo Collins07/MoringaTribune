@@ -4,7 +4,7 @@ import datetime as dt
 
 # Create your views here.
 def welcome(request):
-    return HttpResponse('Welcome To The Moringa Tribune')
+    return HttpResponse('Welcome To The Moringa Tribunal')
 
 def news_of_day(request):
     date = dt.date.today()
@@ -14,5 +14,5 @@ def news_of_day(request):
                 <h1> {date.day}-{date.month}-{date.year}</h1>
             </body>
         </html>
-        '''
-    return HttpResponse(html)    
+            '''
+    return HttpResponse(html)   
