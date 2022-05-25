@@ -5,6 +5,8 @@ class Editor(models.Model):
     first_name = models.CharField(max_length =20)
     last_name = models.CharField(max_length =20)
     email = models.EmailField()
+    phone_number = models.CharField(max_length = 10,blank =True)
+
 
 
     def __str__(self):
@@ -12,7 +14,7 @@ class Editor(models.Model):
 
     def save_editor(self):
         self.save()    
-        
+
     class Meta:
         ordering = ['first_name']
 
